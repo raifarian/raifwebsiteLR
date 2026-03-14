@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Image Downloads</title>
+
+<style>
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+
+/* BODY */
+
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+
+/* blue yellow gradient */
+
+background: linear-gradient(
+135deg,
+#2a7bff 0%,
+#5fa8ff 35%,
+#ffd84d 100%
+);
+}
+
+/* blur overlay */
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+backdrop-filter:blur(80px);
+background:rgba(255,255,255,0.05);
+z-index:-1;
+}
+
+/* container grid */
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:35px;
+width:100%;
+max-width:1000px;
+}
+
+/* glass card */
+
+.card{
+
+padding:18px;
+border-radius:22px;
+
+background:rgba(255,255,255,0.18);
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,0.25);
+
+box-shadow:
+0 12px 30px rgba(0,0,0,0.25),
+inset 0 1px 1px rgba(255,255,255,0.4);
+
+transition:0.35s;
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.02);
+}
+
+/* image preview */
+
+.card img{
+width:100%;
+border-radius:14px;
+margin-bottom:15px;
+display:block;
+}
+
+/* download button */
+
+.download-btn{
+
+display:block;
+text-align:center;
+
+padding:10px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+
+background:rgba(255,255,255,0.35);
+color:#222;
+
+box-shadow:
+0 4px 10px rgba(0,0,0,0.15),
+inset 0 1px 1px rgba(255,255,255,0.5);
+
+transition:0.25s;
+}
+
+.download-btn:hover{
+background:rgba(255,255,255,0.6);
+transform:scale(1.04);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- CARD 1 -->
+<div class="card">
+<img src="./assets/presetpost1.jpg.jpeg" alt="Image">
+<a href="./assets/Preset1.dng" download class="download-btn">
+Download
+</a>
+</div>
+
+<!-- CARD 2 -->
+<div class="card">
+<img src="./assets/presetpost2.jpg.jpeg" alt="Image">
+<a href="./assets/preset2.dng" download class="download-btn">
+Download
+</a>
+</div>
+
+<!-- CARD 3 -->
+<div class="card">
+<img src="./assets/presetpost3.jpg.jpeg" alt="Image">
+<a href="./assets/preset3.dng" download class="download-btn">
+Download
+</a>
+</div>
+
+<!-- CARD 4-->
+<div class="card">
+<img src="./assets/presetpost4.jpg" alt="Image">
+<a href="./assets/preset4.dng" download class="download-btn">
+Download
+</a>
+</div>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preset Store</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* Optional smooth scrolling behavior for all anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add hover animation to nav links */
+.nav-links a {
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ff4d4d;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Optional scroll animation */
+html {
+  scroll-behavior: smooth;
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+
+  <div class="nav-container">
+
+    <div class="logo">
+      RAIF<span> ARIAN</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#" data-scroll="hero">Home</a>
+      <a href="#" data-scroll="preset-card">Presets</a>
+      <a href="#" data-scroll="free-content">Free Presets</a>
+      <a href="#" data-scroll="before-after">Before/After</a>
+      <a href="#" data-scroll="how-it-works">Blog</a>
+      <a href="#" data-scroll="site-footer">Contact</a>
+    </nav>
+
+    <div class="cta">
+      <button class="download-btn">Free Presets</button>
+    </div>
+
+  </div>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-bg-blur"></div>
+
+  <div class="hero-container">
+
+      <!-- Left Content -->
+      <div class="hero-content">
+
+          <h1>Transform Your Photos <br> In One Click</h1>
+
+          <p>
+          Professional Lightroom presets for photographers,
+          influencers and creators. Instantly upgrade your photos
+          with cinematic color grading.
+          </p>
+
+          <div class="hero-buttons">
+              <button class="primary-btn">Browse Presets</button>
+              <button class="secondary-btn">Free Presets</button>
+          </div>
+
+      </div>
+
+      <!-- Right Preview -->
+      <div class="hero-preview">
+
+          <div class="preview-card before">
+              <img src="./assets/raif front1.JPG" alt="before">
+              <span>Before</span>
+          </div>
+
+          <div class="preview-card after">
+              <img src="./assets/raif front2.JPG" alt="after">
+              <span>After</span>
+          </div>
+
+      </div>
+
+  </div>
+
+</section>
+
+<section class="social-proof">
+
+  <div class="social-bg-blur"></div>
+
+  <div class="social-container">
+
+      <h2 class="social-title">Trusted by Creators Worldwide</h2>
+
+      <div class="proof-grid">
+
+          <div class="proof-card">
+              <h3>2K+</h3>
+              <p>Preset Downloads</p>
+          </div>
+
+          <div class="proof-card">
+              <h3>4.9 ★</h3>
+              <p>Average Rating</p>
+          </div>
+
+          <div class="proof-card">
+              <h3>5K+</h3>
+              <p>Happy Creators</p>
+          </div>
+
+          <div class="proof-card">
+              <h3>12+</h3>
+              <p>Professional Presets</p>
+          </div>
+
+      </div>
+
+  </div>
+
+</section>
+
+<section class="featured-presets">
+
+  <div class="featured-blur"></div>
+
+  <div class="featured-container">
+
+      <h2 class="section-title">Featured Preset Packs</h2>
+      <p class="section-subtitle">
+        Professional Lightroom presets designed for creators and photographers.
+      </p>
+
+      <div class="preset-grid">
+
+          <!-- Preset Card -->
+          <div class="preset-card">
+              <img src="./assets/presetpost1.jpg.jpeg" alt="Moody Presets">
+
+              <div class="preset-info">
+                  <h3>Moody Pack</h3>
+                  <p>1 Presets</p>
+
+                  <div class="preset-footer">
+                      <span class="price">$0</span>
+                      <button><a href="Dpg.html">Download</a></button>
+                  </div>
+              </div>
+          </div>
+
+          <div class="preset-card">
+              <img src="./assets/presetpost2.jpg.jpeg" alt="Travel Presets">
+
+              <div class="preset-info">
+                  <h3>Travel Pack</h3>
+                  <p>1 Presets</p>
+
+                  <div class="preset-footer">
+                      <span class="price">$0</span>
+                      <button><a href="Dpg.html">Download</a></button>
+                  </div>
+              </div>
+          </div>
+
+          <div class="preset-card">
+              <img src="./assets/presetpost3.jpg.jpeg" alt="Cinematic Presets">
+
+              <div class="preset-info">
+                  <h3>Cinematic Pack</h3>
+                  <p>1 Presets</p>
+
+                  <div class="preset-footer">
+                      <span class="price">$0</span>
+                      <button><a href="Dpg.html">Download</a></button>
+                  </div>
+              </div>
+          </div>
+
+          <div class="preset-card">
+              <img src="./assets/presetpost4.jpg" alt="Portrait Presets">
+
+              <div class="preset-info">
+                  <h3>Portrait Pack</h3>
+                  <p>1 Presets</p>
+
+                  <div class="preset-footer">
+                      <span class="price">$0</span>
+                      <button><a href="Dpg.html">Download</a></button>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+
+</section>
+
+<section class="before-after">
+
+  <div class="ba-blur"></div>
+
+  <div class="ba-container">
+
+      <h2 class="ba-title">See The Difference</h2>
+      <p class="ba-subtitle">
+        Watch how our presets transform ordinary photos into stunning visuals.
+      </p>
+
+      <div class="ba-grid">
+
+          <!-- Card 1 -->
+          <div class="ba-card">
+
+              <div class="ba-image before">
+                  <img src="./assets/B3.JPG" alt="Before">
+                  <span>Before</span>
+              </div>
+
+              <div class="ba-image after">
+                  <img src="./assets/A3.JPG" alt="After">
+                  <span>After</span>
+              </div>
+
+          </div>
+
+          <!-- Card 2 -->
+          <div class="ba-card">
+
+              <div class="ba-image before">
+                  <img src="./assets/B2.JPG" alt="Before">
+                  <span>Before</span>
+              </div>
+
+              <div class="ba-image after">
+                  <img src="./assets/A2.JPG" alt="After">
+                  <span>After</span>
+              </div>
+
+          </div>
+
+          <!-- Card 3 -->
+          <div class="ba-card">
+
+              <div class="ba-image before">
+                  <img src="./assets/B1.JPG" alt="Before">
+                  <span>Before</span>
+              </div>
+
+              <div class="ba-image after">
+                  <img src="./assets/A1.JPG" alt="After">
+                  <span>After</span>
+              </div>
+
+          </div>
+
+      </div>
+
+  </div>
+
+</section>
+
+<section class="how-it-works">
+
+  <div class="hiw-blur"></div>
+
+  <div class="hiw-container">
+
+      <h2 class="hiw-title">How It Works</h2>
+      <p class="hiw-subtitle">
+        Transform your photos in just a few simple steps.
+      </p>
+
+      <div class="steps-grid">
+
+          <div class="step-card">
+              <div class="step-number">01</div>
+              <h3>Download Presets</h3>
+              <p>Choose your favorite preset pack and download it instantly.</p>
+          </div>
+
+          <div class="step-card">
+              <div class="step-number">02</div>
+              <h3>Import to Lightroom</h3>
+              <p>Import the presets into Lightroom Mobile or Desktop.</p>
+          </div>
+
+          <div class="step-card">
+              <div class="step-number">03</div>
+              <h3>Apply Preset</h3>
+              <p>Apply the preset to your photo with a single click.</p>
+          </div>
+
+          <div class="step-card">
+              <div class="step-number">04</div>
+              <h3>Export & Share</h3>
+              <p>Export your edited photo and share it with the world.</p>
+          </div>
+
+      </div>
+
+  </div>
+
+</section>
+
+<section class="free-presets">
+
+  <div class="free-blur"></div>
+
+  <div class="free-container">
+
+      <!-- Left Preview -->
+      <div class="preset-preview">
+
+          <div class="preview-card">
+              <img src="./assets/FREEposter.PNG" alt="Free Presets">
+              <span>FREE PACK</span>
+          </div>
+
+      </div>
+
+      <!-- Right Content -->
+      <div class="free-content">
+
+          <h2>Get 10 FREE Lightroom Presets</h2>
+
+          <p>
+            Download our free preset starter pack and instantly
+            transform your photos with professional color grading.
+          </p>
+
+          <form class="email-form">
+
+              <input type="email" placeholder="Enter your email" required>
+
+              <button type="submit">
+                Download Free Pack
+              </button>
+
+          </form>
+
+          <small>No spam. Instant download.</small>
+
+      </div>
+
+  </div>
+
+  <script>
+const freeForm = document.querySelector('.email-form');
+
+freeForm.addEventListener('submit', function(e){
+  e.preventDefault();
+  const emailInput = freeForm.querySelector('input[type="email"]');
+  if(emailInput.value){
+    alert(`Thank you! Your free preset pack has been sent to ${emailInput.value}`);
+    emailInput.value = ''; // clear input
+  } else {
+    alert('Please enter a valid email.');
+  }
+});
+</script>
+
+</section>
+
+<section class="creator-story">
+
+  <div class="story-blur"></div>
+
+  <div class="story-container">
+
+      <!-- Creator Image -->
+      <div class="creator-image">
+
+          <div class="image-card">
+              <img src="./assets/raif about.png" alt="Creator">
+          </div>
+
+      </div>
+
+      <!-- Story Content -->
+      <div class="creator-content">
+
+          <h2>Meet the Creator</h2>
+
+          <p class="intro">
+            Hi, I'm RAIF — a professional photographer and color grading enthusiast.
+          </p>
+
+          <p>
+            I created these Lightroom presets to help photographers, influencers,
+            and content creators achieve cinematic edits in seconds. After years
+            of editing thousands of photos, I developed preset packs that deliver
+            consistent, professional results with just one click.
+          </p>
+
+          <p>
+            Whether you're editing travel shots, portraits, or Instagram content,
+            these presets help you save time and elevate your visual style.
+          </p>
+
+          <button class="story-btn">
+            Explore My Presets
+          </button>
+
+      </div>
+
+  </div>
+
+</section>
+
+<section class="testimonials">
+
+  <div class="test-blur"></div>
+
+  <div class="test-container">
+
+      <h2 class="test-title">What Our Users Say</h2>
+      <p class="test-subtitle">Trusted by photographers and creators worldwide</p>
+
+      <div class="test-grid">
+
+          <!-- Testimonial 1 -->
+          <div class="test-card">
+              <p>"These presets completely transformed my Instagram feed. Highly recommend!"</p>
+              <div class="test-author">
+                  <img src="./assets/RV2.JPG" alt="User Photo">
+                  <span>Sarah K.</span>
+                  <span class="stars">★★★★★</span>
+              </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="test-card">
+              <p>"Professional quality presets that save me hours of editing. Love them!"</p>
+              <div class="test-author">
+                  <img src="./assets/RV1.JPG" alt="User Photo">
+                  <span>David M.</span>
+                  <span class="stars">★★★★★</span>
+              </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="test-card">
+              <p>"The colors are perfect and consistent across my photos. Great value."</p>
+              <div class="test-author">
+                  <img src="./assets/RV3.JPG" alt="User Photo">
+                  <span>Emily R.</span>
+                  <span class="stars">★★★★★</span>
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+
+</section>
+
+<section class="faq">
+
+  <div class="faq-blur"></div>
+
+  <div class="faq-container">
+
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <p class="faq-subtitle">Everything you need to know about our presets</p>
+
+      <div class="faq-grid">
+
+          <div class="faq-card">
+              <button class="faq-question">How do I install the presets?</button>
+              <div class="faq-answer">
+                  <p>You can import the downloaded preset files directly into Lightroom Desktop or Mobile by following our step-by-step guide included in the download package.</p>
+              </div>
+          </div>
+
+          <div class="faq-card">
+              <button class="faq-question">Are the presets compatible with Lightroom Mobile?</button>
+              <div class="faq-answer">
+                  <p>Yes! All our presets are fully compatible with both Lightroom Mobile and Lightroom Desktop, including the latest updates.</p>
+              </div>
+          </div>
+
+          <div class="faq-card">
+              <button class="faq-question">Can I use the presets for commercial work?</button>
+              <div class="faq-answer">
+                  <p>Absolutely! You can use our presets for personal and commercial projects. Redistribution is prohibited.</p>
+              </div>
+          </div>
+
+          <div class="faq-card">
+              <button class="faq-question">Do you offer free presets?</button>
+              <div class="faq-answer">
+                  <p>Yes! You can download a starter pack of free presets by entering your email in our Free Preset Lead Magnet section.</p>
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+  <script>
+const faqCards = document.querySelectorAll('.faq-card');
+faqCards.forEach(card => {
+  const btn = card.querySelector('.faq-question');
+  btn.addEventListener('click', () => {
+    card.classList.toggle('active');
+  });
+});
+</script>
+
+</section>
+
+<section class="final-cta">
+
+  <div class="cta-blur"></div>
+
+  <div class="cta-container">
+
+      <div class="cta-content">
+          <h2>Ready to Transform Your Photos?</h2>
+          <p>Upload your best RAW photographs here. Don't forgot do mention your instagram I'D</p>
+          <div class="cta-buttons">
+              <a href="mail.html" class="cta-btn-primary">Contact</a>
+              <a href="mail.html" class="cta-btn-secondary">Upload image for grading</a>
+          </div>
+      </div>
+
+  </div>
+
+</section>
+
+<footer class="site-footer">
+
+  <div class="footer-blur"></div>
+
+  <div class="footer-container">
+
+      <!-- Logo / Brand -->
+      <div class="footer-brand">
+          <h2>Raif Arian</h2>
+          <p>Professional Lightroom Presets for Creators</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-nav">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#featured-presets">Preset Packs</a></li>
+              <li><a href="#before-after">Before/After</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#faq">FAQ</a></li>
+          </ul>
+      </div>
+
+      <!-- Social Links -->
+<div class="footer-social">
+  <h3>Follow Me</h3>
+  <ul>
+    <li>
+      <a href="https://www.instagram.com/raif.arian" target="_blank" rel="noopener">
+        <img src="./assets/instagram.png" alt="Instagram">
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.facebook.com/raif.arian.1" target="_blank" rel="noopener">
+        <img src="./assets/facebook.png" alt="Facebook">
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.youtube.com/@yourchannel" target="_blank" rel="noopener">
+        <img src="./assets/youtube-circle.png" alt="YouTube">
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.pinterest.com/yourusername" target="_blank" rel="noopener">
+        <img src="./assets/pinterest-square.png" alt="Pinterest">
+      </a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+
+  <div class="footer-bottom">
+      <p>© 2026 Raif Arian. All rights reserved.</p>
+  </div>
+
+</footer>
+
+<script>
+// Smooth scroll for header navigation
+const navLinks = document.querySelectorAll('.nav-links a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetClass = link.getAttribute('data-scroll');
+
+    let targetElement;
+
+    // Special handling for Presets and Free Presets
+    if(targetClass === 'preset-card'){
+      targetElement = document.querySelector('.preset-card');
+    } else if(targetClass === 'free-content'){
+      targetElement = document.querySelector('.free-content');
+    } else {
+      targetElement = document.querySelector(`.${targetClass}`);
+    }
+
+    if(targetElement){
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
